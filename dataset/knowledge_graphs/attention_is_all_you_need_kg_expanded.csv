@@ -1,0 +1,383 @@
+src entity,relationship,destination
+Attention is all you need,has author,Ashish Vaswani
+Attention is all you need,has author,Noam Shazeer
+Attention is all you need,has author,Niki Parmar
+Attention is all you need,has author,Jakob Uszkoreit
+Attention is all you need,has author,Llion Jones
+Attention is all you need,has author,Aidan N. Gomez
+Attention is all you need,has author,Łukasz Kaiser
+Attention is all you need,has author,Illia Polosukhin
+Ashish Vaswani,associated with institution,Google Brain
+Noam Shazeer,associated with institution,Google Brain
+Niki Parmar,associated with institution,Google Research
+Jakob Uszkoreit,associated with institution,Google Research
+Llion Jones,associated with institution,Google Research
+Aidan N. Gomez,associated with institution,University of Toronto
+Łukasz Kaiser,associated with institution,Google Brain
+Illia Polosukhin,associated with institution,Google Research
+Attention is all you need,uses dataset,WMT 2014 English-to-German
+Attention is all you need,uses dataset,WMT 2014 English-to-French
+Attention is all you need,uses dataset,Penn Treebank (WSJ) for English Parsing
+Attention is all you need,proposes method,Transformer
+Attention is all you need,uses method,Multi-Head Attention
+Attention is all you need,uses method,Scaled Dot-Product Attention
+Attention is all you need,uses method,Self-Attention
+Attention is all you need,uses method,Positional Encoding
+Attention is all you need,uses method,Encoder-Decoder Architecture
+Attention is all you need,uses method,Layer Normalization
+Attention is all you need,uses method,Residual Connections
+Attention is all you need,uses method,Adam Optimizer
+Attention is all you need,uses method,Regularization
+Attention is all you need,uses method,Dropout
+Attention is all you need,uses method,Label Smoothing
+Attention is all you need,uses method,Byte Pair Encoding (BPE)
+Attention is all you need,uses method,Beam Search
+Attention is all you need,uses evaluation metric,BLEU Score
+Attention is all you need,uses evaluation metric,Perplexity
+Attention is all you need,uses evaluation metric,F1 Score (Parsing Task)
+Attention is all you need,achieved result,BLEU Score of 28.4 on English-to-German task
+Attention is all you need,achieved result,BLEU Score of 41.8 on English-to-French task
+Attention is all you need,achieved result,F1 Score of 91.3 on WSJ-only parsing task
+Attention is all you need,achieved result,F1 Score of 92.7 on semi-supervised parsing task
+Attention is all you need,achieved result,Reduced training cost compared to RNN-based models
+Attention is all you need,achieved result,Improved parallelization over sequential models
+Attention is all you need,addresses problem,High computational cost of RNNs
+Attention is all you need,addresses problem,Sequential computation bottleneck in RNNs
+Attention is all you need,addresses problem,Long-range dependency modeling
+Attention is all you need,addresses problem,Difficulty in learning positional relationships in sequences
+Transformer,uses component,Encoder
+Transformer,uses component,Decoder
+Encoder,uses layer,Self-Attention
+Decoder,uses layer,Masked Self-Attention
+Self-Attention,computes dependencies using,"Query, Key, and Value"
+Multi-Head Attention,improves modeling,Multiple subspace representations
+Positional Encoding,provides information on,Token sequence positions
+Scaled Dot-Product Attention,enhances,Efficiency of attention computation
+Layer Normalization,improves,Gradient flow during training
+Attention is all you need,trained using hardware,8 NVIDIA P100 GPUs
+Attention is all you need,trained for,3.5 days for the big model
+Attention is all you need,trained for,12 hours for the base model
+Attention is all you need,uses hyperparameter,Learning rate schedule with warmup steps
+Attention is all you need,uses hyperparameter,Batch size of 25k tokens per language
+Attention is all you need,replaces,Recurrent Neural Networks in sequence-to-sequence tasks
+Attention is all you need,enables,Parallel computation during training
+Attention is all you need,achieves,State-of-the-art results in machine translation
+Attention is all you need,inspires development of,"BERT, GPT, and other transformer-based models"
+Attention is all you need,cites paper,"Neural Machine Translation by Jointly Learning to Align and Translate (Bahdanau et al., 2014)"
+Attention is all you need,cites paper,"Learning Phrase Representations using RNN Encoder-Decoder (Cho et al., 2014)"
+Attention is all you need,cites paper,"Xception: Deep Learning with Depthwise Separable Convolutions (Chollet, 2016)"
+Attention is all you need,cites paper,"GNMT: Google's Neural Machine Translation System (Wu et al., 2016)"
+Attention is all you need,cites paper,"Convolutional Sequence to Sequence Learning (Gehring et al., 2017)"
+Attention is all you need,cites paper,"ByteNet (Kalchbrenner et al., 2016)"
+Attention is all you need,cites paper,"Deep Recurrent Models with Fast-Forward Connections (Zhou et al., 2016)"
+Attention is all you need,cites paper,"Rethinking the Inception Architecture for Computer Vision (Szegedy et al., 2015)"
+Attention is all you need,cites paper,"Using the Output Embedding to Improve Language Models (Press and Wolf, 2016)"
+Attention is all you need,cites paper,"Massive Exploration of Neural Machine Translation Architectures (Britz et al., 2017)"
+Attention is all you need,compares against,Recurrent Neural Networks
+Attention is all you need,compares against,GNMT with Reinforcement Learning
+Attention is all you need,compares against,Convolutional Neural Networks
+Transformer Model,employs,Self-Attention Mechanism
+Transformer Model,employs,Multi-Head Attention
+Transformer Model,employs,Positional Encoding
+Self-Attention Mechanism,part of,Encoder and Decoder Stacks
+Multi-Head Attention,enhances,Self-Attention Mechanism
+Positional Encoding,added to,Input Embeddings
+Encoder,processes,Input Sequence
+Decoder,generates,Output Sequence
+Decoder,uses output of,Encoder
+Training Data and Batching,necessary for,Model Training
+Optimization Techniques,used during,Model Training
+Regularization Techniques,prevent,Overfitting
+Self-Attention Mechanism,allows,Parallel Processing
+Multi-Head Attention,allows,Different Subspace Attention
+Positional Encoding,enables,Sequence Order Understanding
+Encoder,contains,Multi-Head Attention Layers
+Encoder,contains,Feed-Forward Networks
+Decoder,contains,Multi-Head Attention Layers
+Decoder,contains,Feed-Forward Networks
+Decoder,incorporates,Masked Self-Attention
+Feed-Forward Networks,exist in,Each Encoder and Decoder Layer
+Feed-Forward Networks,apply,ReLU Activation
+Model Training,utilizes,Adam Optimizer
+Model Training,employs,Dropout Regularization
+Model Training,employs,Label Smoothing
+Training Data,prepared using,Byte-Pair Encoding
+Training Data,comes from,WMT 2014 English-German dataset
+Optimization Techniques,include,Warmup Steps
+Optimization Techniques,include,Learning Rate Scheduling
+Regularization Techniques,include,Residual Dropout
+Regularization Techniques,include,Attention Dropout
+Machine Translation,tasks include,English-to-German Translation
+Machine Translation,tasks include,English-to-French Translation
+Model Variations,tested on,English-to-German Translation
+English Constituency Parsing,applied to,Penn Treebank Dataset
+Model Results,measured by,BLEU Score
+Model Results,indicate,State-of-the-Art Performance
+Model Variations,explore,Number of Attention Heads
+Model Variations,explore,Size of Feed-Forward Networks
+Hardware and Schedule,requires,NVIDIA P100 GPUs
+Encoder and Decoder Stacks,implement,Layer Normalization
+Input Embeddings,combined with,Positional Encodings
+Softmax Layer,converts,Decoder Output to Probabilities
+Model Architecture,described as,Encoder-Decoder Structure
+Generative Pre-training,leads to,Improved NLU Performance
+Fine-tuning,adapts to,Specific Tasks
+Language Model,serves as basis for,Generative Pre-training
+Language Model,serves as basis for,Fine-tuning
+Language Model,utilized for,Token Prediction
+Token Prediction,improves,Textual Entailment
+Token Prediction,improves,Question Answering
+Token Prediction,improves,Semantic Similarity
+Token Prediction,improves,Document Classification
+Generative Pre-training,enables,Token Prediction
+Fine-tuning,utilizes,Task-specific Parameters
+Task-specific Parameters,leads to,Improved Task Performance
+Pre-trained Model,applied to,Textual Entailment
+Pre-trained Model,applied to,Question Answering
+Pre-trained Model,applied to,Semantic Similarity
+Pre-trained Model,applied to,Document Classification
+Unsupervised Data,trains,Language Model
+Supervised Data,trains,Fine-tuning
+Transformer Architecture,used in,Language Model
+Transformer Architecture,used in,Fine-tuning
+Attention Mechanisms,part of,Transformer Architecture
+Multi-Head Attention,variant of,Attention Mechanisms
+Positional Encodings,used in,Transformer Architecture
+Positional Encodings,affects,Attention Distribution
+Feed-forward Networks,component of,Transformer Architecture
+Layer Normalization,component of,Transformer Architecture
+Layer Normalization,leads to,Stabilizes Training
+Language Modeling Loss,used in,Generative Pre-training
+Discriminative Fine-tuning,method for,Specific Tasks
+Zero-shot Learning,demonstrates,Generalization Capability
+Transfer Learning,enhances,Model Flexibility
+Self-Attention,type of,Attention Mechanisms
+Contextual Representations,enhances,Language Understanding
+BERT Integration,example of,Transformer Enhancements
+BERT,produces,Contextual Representations
+Pre-training Tasks,improves,NLU Task Performance
+Natural Language Inference,targets,Understanding Relationships
+Sentence Representation,output of,Language Model
+Model Parameters,influences,Training Efficiency
+Computational Efficiency,requires,Model Design
+Training Data,increases,Model Robustness
+Adaptive Learning,method of,Training Strategy
+Learning Rate,affects,Model Convergence
+Optimization Algorithms,used in,Model Training
+Batch Processing,used for,Training Efficiency
+Hyperparameter Tuning,optimizes,Model Performance
+Model Evaluation,measures,NLU Task Performance
+Baseline Models,provides,Comparative Analysis
+State-of-the-art Models,sets,Performance Benchmark
+Research Contributions,contributes to,Field Advancement
+Language Models,trained on,WebText
+WebText,enables,Unsupervised Learning
+Language Models,perform,Zero-shot Task Performance
+Zero-shot Task Performance,demonstrates,Model Flexibility
+Language Models,utilize,Transformer Architecture
+Language Modeling,requires,No Supervised Data
+Unsupervised Learning,potentially leads to,Generalization across Tasks
+Multitask Learning,implemented by,Language Models
+Language Models,achieve,State of the Art Results
+GPT-2,example of,High-capacity Language Models
+Language Models,used for,Task Transfer without Fine-tuning
+WebText,includes,Diverse Internet Text
+GPT-2,performs on,Multiple NLP Tasks
+Model Capacity,correlates with,Performance Improvement
+Performance Improvement,observed in,NLP Tasks
+WebText,provides,Natural Language Demonstrations
+Transformer Architecture,provides basis for,Language Modeling
+Zero-shot Task Performance,enhances,NLP Domain Adaptability
+Language Models,support,Multitask Learning Capability
+Model Scaling,leads to,Improved Task Performance
+GPT-2,tests,Winograd Schema Challenge
+Unsupervised Multitask Learning,aims for,Robust Language Understanding
+Task Transfer,utilizes,Zero-shot Learning Techniques
+GPT-2,utilizes,Transformer-based Model Design
+Pre-training,on WebText,Improves Language Understanding
+Natural Language Processing,encompasses,Various Language Tasks
+Machine Learning,driven by,Large-scale Datasets
+Language Models,enable,Flexible Task Adaptation
+High-capacity Models,facilitate,Better Generalization
+Language Understanding,enhanced by,Advanced Modeling Techniques
+WebText,created from,Filtered Web Scrapes
+GPT-3,employs,Transformer Architecture
+Transformer Architecture,enables,Better Language Understanding
+GPT-3,utilizes,Few-Shot Learning
+Few-Shot Learning,leads to,Improved NLP Task Performance
+GPT-3,supports,Zero-Shot Learning
+Zero-Shot Learning,compared with,One-Shot Learning
+One-Shot Learning,compared with,Few-Shot Learning
+GPT-3,demonstrates capability in,Natural Language Inference
+GPT-3,applied on,SuperGLUE Benchmark
+SuperGLUE Benchmark,includes,Multiple NLP Tasks
+NLP Tasks,include,Question Answering
+NLP Tasks,include,Textual Entailment
+NLP Tasks,include,Common Sense Reasoning
+GPT-3,shows,In-context Learning Capability
+In-context Learning,utilizes,Language Instructions
+Language Instructions,guide,Task Execution
+Task Execution,involves,Using Contextual Clues
+GPT-3,evaluated for,Reading Comprehension
+Reading Comprehension,demonstrates,Model's Understanding Ability
+GPT-3,generates,Synthetic Text
+Synthetic Text,compared by,Human Evaluators
+Human Evaluators,difficult to distinguish,From Human-Written Text
+GPT-3,operates under,No Gradient Updates
+No Gradient Updates,challenge,Traditional Fine-tuning Methods
+Traditional Fine-tuning,relies on,Large Training Datasets
+Large Training Datasets,pose risk of,Overfitting
+Overfitting,leads to,Poor Generalization
+Poor Generalization,affects,Real-World Application
+Real-World Application,necessitates,Robust Models
+Robust Models,require,Effective Training Strategies
+Effective Training Strategies,include,Data Filtering
+Data Filtering,enhances,Training Data Quality
+Training Data Quality,influences,Model Performance
+Model Performance,measured by,Validation Loss
+Validation Loss,shows,Model Efficiency
+Model Efficiency,correlated with,Compute Resources
+Compute Resources,allocated for,Model Training
+Model Training,explores,Different Model Sizes
+Different Model Sizes,tested on,Diverse NLP Tasks
+Diverse NLP Tasks,demonstrate,Model Adaptability
+Model Adaptability,crucial for,Task Versatility
+Task Versatility,enables,Application Across Fields
+Application Across Fields,requires,Sophisticated Language Models
+Sophisticated Language Models,represented by,GPT-3
+GPT-3,sets,New Benchmarks in AI
+New Benchmarks in AI,push,Technological Advancements
+Technological Advancements,lead to,Societal Changes
+Societal Changes,raise,Ethical Considerations
+Ethical Considerations,need for,Careful Management
+G-Retriever,utilizes,Graph Neural Networks (GNNs)
+G-Retriever,employs,Large Language Models (LLMs)
+G-Retriever,integrates,Retrieval-Augmented Generation (RAG)
+Retrieval-Augmented Generation,enhances,Graph Understanding
+Graph Neural Networks,supports,Textual Graph Processing
+Large Language Models,generate,Textual Responses
+G-Retriever,targets,Real-world Textual Graphs
+GraphQA Benchmark,evaluates,G-Retriever Performance
+GraphQA Benchmark,includes,SceneGraphs Dataset
+GraphQA Benchmark,incorporates,WebQSP Dataset
+Prize-Collecting Steiner Tree,optimizes,Graph Query Responses
+G-Retriever,implements,Soft Prompting
+Soft Prompting,minimizes,Model Hallucination
+G-Retriever,uses,Graph Textualization
+Graph Textualization,converts,Graphs to Text
+GNNs,encode,Graph Structure
+LLMs,process,Encoded Text
+RAG,employs,Direct Information Retrieval
+Direct Information Retrieval,ensures,Accurate Data Representation
+G-Retriever,aims to,Enhance Scalability and Efficiency
+G-Retriever,designed for,Complex Graph Queries
+SceneGraphs Dataset,provides,Spatial Graph Understanding
+WebQSP Dataset,used for,Knowledge Graph Reasoning
+G-Retriever,achieves,State-of-the-Art Results
+Empirical Evaluations,demonstrate,Superiority Over Baselines
+Hallucination Issue,mitigated by,RAG Component
+Graph Encoders,used in,Subgraph Construction
+Subgraph Construction,facilitates,Efficient LLM Processing
+Unified Conversational Interface,enables,Interactive Graph Queries
+Graph Reasoning,enhanced by,RAG
+G-Retriever,demonstrates,Robustness Across Domains
+Retrieval Operations,optimized by,PCST
+PCST,solves,Optimal Subgraph Retrieval Problem
+Textual Graphs,handled by,G-Retriever
+G-Retriever,develops,Novel GraphQA Benchmark
+GraphQA Benchmark,covers,Diverse Graph Tasks
+G-Retriever,customizes,Graph Prompt Tuning
+Graph Prompt Tuning,improves,Query Specificity
+Query Specificity,leads to,Better Model Responses
+G-Retriever,supports,Explainable AI Practices
+Explainable AI,requires,Transparent Retrieval Methods
+Transparent Retrieval Methods,achieved by,Graph Visualizations
+Graph Visualizations,help,Understand Model Decisions
+Graph Data,encoded by,Graph Encoders
+Graph Encoders,use,Attention Mechanisms
+Attention Mechanisms,enhance,Node Relevance Understanding
+Node Relevance Understanding,affects,Answer Accuracy
+Answer Accuracy,critical for,User Trust
+User Trust,enhanced by,Reduced Hallucinations
+Reduced Hallucinations,result from,Effective RAG Implementation
+Effective RAG Implementation,relies on,Accurate Retrieval and Encoding
+Accurate Retrieval and Encoding,facilitated by,Advanced GNNs and LLMs
+Advanced GNNs and LLMs,drive,Innovations in GraphQA
+KGs,improve,RAG Information Retrieval
+RAG,utilizes,KGs for Contextual Relevance
+LLMs,benefit from,RAG for Factual Accuracy
+"Retrieval-Augmented Generation with Knowledge Graphs for Customer Service Question Answering",proposes,Combining RAG with KGs
+Customer Service QA,benefits from,KG Integration
+Historical Customer Service Data,used to build,Knowledge Graph
+"Knowledge Graph-Augmented Language Models for Knowledge-Intensive Task",introduces,SURGE Framework
+SURGE Framework,retrieves,Relevant Subgraphs from KGs
+SURGE Framework,ensures,Consistency Across Facts
+"Graph Retrieval-Augmented Generation: A Survey",examines,KG Integration in RAG
+KGs,address,Hallucinations in LLMs
+KG RAG domain,has research paper,KG-RAG: Bridging the Gap Between Knowledge and Creativity
+KG RAG domain,has research paper,Mindful-rag: A study of points of failure in retrieval augmented generation
+KG RAG domain,has research paper,GNN-RAG: Graph Neural Retrieval for Large Language Model Reasoning
+KG RAG domain,has research paper,Graphusion: A RAG Framework for Knowledge Graph Construction with a Global Perspective
+KG RAG domain,has research paper,CRAG--Comprehensive RAG Benchmark
+KG RAG domain,has research paper,Biomedical knowledge graph-optimized prompt generation for large language models
+KG RAG domain,has research paper,CommunityKG-RAG: Leveraging Community Structures in Knowledge Graphs for Advanced Retrieval-Augmented Generation in Fact-Checking
+KG RAG domain,has research paper,KGC-RAG: Knowledge Graph Construction from Large Language Model Using Retrieval-Augmented Generation
+KG RAG domain,has research paper,A RAG Approach for Generating Competency Questions in Ontology Engineering
+KG RAG domain,has research paper,WeKnow-RAG: An Adaptive Approach for Retrieval-Augmented Generation Integrating Web Search and Knowledge Graphs
+KGs,mitigate,Outdated Information in LLMs
+"Enhancing Retrieval-Augmented Generation Models with Knowledge Graphs",incorporates,Structured Data from KGs
+"Enhancing Retrieval-Augmented Generation Models with Knowledge Graphs",mitigates,Retrieval Noise
+"Enhancing Retrieval-Augmented Generation Models with Knowledge Graphs",mitigates,Hallucinations
+"Mapping the Mind: Knowledge-Graph Augmented Retrieval",explores,KG-based Retrieval Enhancement
+KG-based Retrieval,leads to,Accurate LLM Responses
+"REANO: Optimising Retrieval-Augmented Reader Models through Knowledge Graph Generation",proposes,REANO Framework
+REANO Framework,generates,Knowledge Graphs for Retrieval Optimization
+REANO Framework,improves,Open-Domain QA Performance
+n"Think-on-Graph 2.0",enhances,LLM Reasoning
+"Think-on-Graph 2.0",aligns,Questions with KGs
+"KG-RAG: Bridging the Gap Between Knowledge and Creativity",integrates,KGs with RAG
+"KG-RAG: Bridging the Gap Between Knowledge and Creativity",addresses,Latent Knowledge Reliance in LLMs
+KGs,enable,Knowledge-Grounded Outputs
+RAG,improves,Answer Relevance and Quality
+BaranziniLab/KG_RAG Repository,provides,KG-RAG Resources
+BaranziniLab/KG_RAG Repository,empowers,Knowledge-Intensive Tasks
+KG-RAG,bridges,Knowledge and Creativity
+KGs,enhance,RAG Systems
+RAG Systems,benefit from,Structured Knowledge
+KG Integration,improves,Retrieval Accuracy
+KGs,reduce,Hallucinations in LLMs
+KGs,enable,Contextual Knowledge Retrieval
+RAG,powered by,Graph Structures
+Retrieval-augmented generation for large language models: A survey is a research paper,cites paper,G-retriever paper
+A survey of large language models for graphs,cites paper,G-retriever paper
+Retrieval-augmented generation for ai-generated content: A survey,cites paper,G-retriever paper
+Graph retrieval-augmented generation: A survey,cites paper,G-retriever paper
+Ragchecker: A fine-grained framework for diagnosing retrieval-augmented generation,cites paper,G-retriever paper
+Graph machine learning in the era of large language models (llms),cites paper,G-retriever paper
+Graph retrieval-augmented generation for large language models: A survey,cites paper,G-retriever paper
+Can LLM Graph Reasoning Generalize beyond Pattern Memorization?,cites paper,G-retriever paper
+STaRK: Benchmarking LLM Retrieval on Textual and Relational Knowledge Bases,cites paper,G-retriever paper
+From local to global: A graph rag approach to query-focused summarization,cites paper,G-retriever paper
+Attention Is All You Need,Authored By,Ashish Vaswani
+Attention Is All You Need,Co-authored By,Noam Shazeer
+Attention Is All You Need,Co-authored By,Niki Parmar
+Attention Is All You Need,Co-authored By,Jakob Uszkoreit
+Attention Is All You Need,Co-authored By,Llion Jones
+Attention Is All You Need,Co-authored By,Aidan N. Gomez
+Attention Is All You Need,Co-authored By,Łukasz Kaiser
+Attention Is All You Need,Co-authored By,Illia Polosukhin
+Tensor2Tensor for Neural Machine Translation,Authored By,Ashish Vaswani
+Tensor2Tensor for Neural Machine Translation,Co-authored By,Łukasz Kaiser
+Fast Parallel Attention Mechanisms for Neural Machine Translation,Authored By,Ashish Vaswani
+Fast Parallel Attention Mechanisms for Neural Machine Translation,Co-authored By,Sameer Bansal
+Fast Parallel Attention Mechanisms for Neural Machine Translation,Co-authored By,Noam Shazeer
+Fast Parallel Attention Mechanisms for Neural Machine Translation,Co-authored By,Jakob Uszkoreit
+Universal Transformers,Authored By,Ashish Vaswani
+Universal Transformers,Co-authored By,Mostafa Dehghani
+Universal Transformers,Co-authored By,Stephan Gouws
+Universal Transformers,Co-authored By,Oriol Vinyals
+Universal Transformers,Co-authored By,Jakob Uszkoreit
+Universal Transformers,Co-authored By,Łukasz Kaiser
+Enabling Factorized Perceptron Updates in Sequence-to-Sequence Models,Authored By,Ashish Vaswani
+Scaling Neural Machine Translation,Authored By,Ashish Vaswani
+Scaling Neural Machine Translation,Co-authored By,Google Research Collaborators
