@@ -10,18 +10,7 @@ python -c "import torch; print(torch.__version__)"
 python -c "import torch; print(torch.version.cuda)"
 pip install pyg_lib torch_scatter torch_sparse torch_cluster torch_spline_conv -f https://data.pyg.org/whl/torch-2.0.1+cu118.html
 
-pip install peft
-pip install pandas
-pip install ogb
-pip install transformers
-pip install wandb
-pip install sentencepiece
-pip install torch_geometric
-pip install datasets
-pip install pcst_fast
-pip install gensim
-pip install scipy==1.12
-pip install protobuf
+pip install -r requirements.txt
 ```
 ## KG Inference
 ```
